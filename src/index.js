@@ -19,7 +19,6 @@ ReactDOM.render(
             <Route exact path = "/sayer/" component = {Main} />
             <Route path = "/sayer/create" component = {CreateItem} />
 	        <Route path = "/sayer/show/:id" component={itemInfo} />
-	        <Route component={NoMatch}/>
         </div>
     </Router>,
 
