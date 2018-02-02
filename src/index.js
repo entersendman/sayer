@@ -16,7 +16,7 @@ const history = createBrowserHistory();
 ReactDOM.render(
     <Router history = {history}>
         <div>
-            <Route exact path = "/sayer" component = {Main} />
+            <Route exact path = "/sayer/" component = {Main} />
             <Route path = "/sayer/create" component = {CreateItem} />
 	        <Route path = "/sayer/show/:id" component={itemInfo} />
 	        <Route component={NoMatch}/>

@@ -45,7 +45,7 @@ class Main extends Component {
 			      const oneItem = (
 			      	<div key={i} className="item">
 
-			          <Link to = {"/main/show/" + i}
+			          <Link to = {"/sayer/show/" + i}
 			                id={i} key={i}>
 
                       {AllPosts[i - 1].item.slice(0, 26)+'...'}
@@ -79,7 +79,7 @@ class Main extends Component {
             </div>
                 {items}
             <div className="buttonAddContainer">
-                <Link to = "/main/create" className="buttonAdd"  >+</Link>
+                <Link to = "/sayer/create" className="buttonAdd"  >+</Link>
             </div>
         </div>
 
