@@ -34,12 +34,10 @@ class Main extends Component {
     }
   render() {
       const { AllPosts } = this.state;
-      console.log(AllPosts)
       if(AllPosts !== null){
 
 	      const getLinks = () => {
 		      const items = []
-		      let short = []
               const PostsIndex = Object.keys(AllPosts)
 		      for(let i = 1 ;i <= PostsIndex.length; i++){
 			      const oneItem = (
@@ -48,7 +46,7 @@ class Main extends Component {
 			          <Link to = {"/sayer/show/" + i}
 			                id={i} key={i}>
 
-                      {AllPosts[i - 1].item.slice(0, 26)+'...'}
+                      { AllPosts[i-1].item.length > 25 ? AllPosts[i - 1].item.slice(0, 25)+'...' : AllPosts[i - 1].item}
 
                       </Link>
 						<div className="actions">
