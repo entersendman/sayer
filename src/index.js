@@ -7,10 +7,6 @@ import {Route, Router} from 'react-router-dom';
 import createBrowserHistory from "history/createBrowserHistory";
 import CreateItem from './CreateItem'
 import itemInfo from './itemInfo'
-import NoMatch from './components/noMatch'
-
-
-
 const history = createBrowserHistory();
 
 ReactDOM.render(
